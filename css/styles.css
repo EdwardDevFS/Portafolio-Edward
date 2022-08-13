@@ -18,6 +18,7 @@ header{
     padding: 1.5rem 2rem;
     text-decoration: none;
 }
+
 .logo-header img{
     width: 50px;
 }
@@ -115,17 +116,17 @@ a{
     grid-row: 1/2;
 }
 .elemento2{
-    background-image: url(../img/konosuba.webp);
+    background-image: url(../img/konosuba.png);
     grid-column: 3/4;
     grid-row: 1/4;
 }
 .elemento3{
-    background-image: url(../img/sentouin.webp);
+    background-image: url(../img/sentouin.png);
     grid-column: 1/3;
     grid-row: 2/4;
 }
 .elemento4{
-    background-image: url(../img/tantei.jpg);
+    background-image: url(../img/tantei.png);
     grid-column: 1/-1;
     grid-row: 4/5;
 }
@@ -210,7 +211,7 @@ footer{
     line-height: 60px;
     
 }
-@media (max-width:768px){
+@media (max-width:952px){
     .checkbtn{
         display: block;
     }
@@ -274,5 +275,25 @@ footer{
         border-radius: 50%;
         text-align: center;
         color: white;
+    }
+    .elemento1{
+        background-image: url(../img/darling2.png);
+        grid-column: 1/3 ;
+        grid-row: 1/2;
+    }
+    .elemento2{
+        background-image: url(../img/konosuba1.png);
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+    .elemento3{
+        background-image: url(../img/sentouin1.png);
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    .elemento4{
+        background-image: url(../img/tantei1.png);
+        grid-column: 1/-1;
+        grid-row: 4/5;
     }
 }
