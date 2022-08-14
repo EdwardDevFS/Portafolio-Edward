@@ -32,6 +32,7 @@ ul{
 .navbar{
     margin-right: 2rem;
     padding: 10px;
+    transition: background-color 0.5s;
 }
 .nav-menu a{
     color: #fff;
@@ -42,13 +43,14 @@ ul{
 .navbar1{
     margin-right: 2rem;
     padding: 10px;
+    transition: background-color 0.5s;
 }
 .navbar1:hover{
     background-color: #a30a0a;
 }
 .menu-icon img{
-    width: 30px;
-    height: 30px;
+    height: 60px;
+    margin-top: -8px;
     border-radius: 2px;
 }
 .menu-icon, #check{
@@ -71,7 +73,6 @@ ul{
     flex-direction: column;
     color: white;
 }
-
 
 
 
@@ -107,26 +108,37 @@ a{
     color: #ff0000;
     margin-bottom: 15px;
 }
-.element:hover{
-    cursor: pointer;
-}
+
 .elemento1{
-    background-image: url(../img/darling1.png);
     grid-column: 1/3 ;
     grid-row: 1/2;
+    cursor: pointer;
+}
+.sel{
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+.sel-img{
+    position: relative;
+    transition: 2s transform, opacity;
+    display: block;
+}
+.sel:hover .sel-img{
+    transform: scale(1.2);
 }
 .elemento2{
-    background-image: url(../img/konosuba.png);
     grid-column: 3/4;
     grid-row: 1/4;
 }
 .elemento3{
-    background-image: url(../img/sentouin.png);
     grid-column: 1/3;
     grid-row: 2/4;
 }
 .elemento4{
-    background-image: url(../img/tantei.png);
     grid-column: 1/-1;
     grid-row: 4/5;
 }
@@ -147,11 +159,7 @@ a{
     "elemento3 elemento3 elemento2"
     "elemento4 elemento4 elemento4";
 }
-.elemento{
-    background-color: #ff0000;
-    text-align: center;
-    
-}
+
 
 
 footer{
@@ -211,6 +219,7 @@ footer{
     line-height: 60px;
     
 }
+
 @media (max-width:952px){
     .checkbtn{
         display: block;
@@ -277,7 +286,7 @@ footer{
         color: white;
     }
     .elemento1{
-        background-image: url(../img/darling2.png);
+        background-image: url(../img/darling3.png);
         grid-column: 1/3 ;
         grid-row: 1/2;
     }
